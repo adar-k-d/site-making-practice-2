@@ -5,19 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KD Computers and Electronics Online Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="head">KD COMPUTERS</h1>
+    <div class="topnav">
+        <h1>KD's Techverse</h1>
+        <a href="index.html" class="active">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About Us</a>
+    </div>
     <h4 class="subtit">Custom built PCs, with quality. Make your computer truly Yours!</h4>
     <h3 class="subsec">In Stock Pre Builts</h3>
-    <div class="image-contailer">
-        <img src="images/azure.jpeg" alt="azure" class="fixed-size-image">
-        <figcaption class="image-description">Azure</figcaption>
+    <div class="image-container">
+
+        <a href="azure.html">
+             <img src="images/azure.jpeg" alt="azure" class="fixed-size-image" onmouseover="foc()" onmouseleave="unfoc()">
+        </a>
+        <div id="azuretex" class="azuretex"></div>
+
         <img src="images/saphire.jpeg" alt="sapphire" class="fixed-size-image">
-        <figcaption class="image-description">Sapphire</figcaption>
+
         <img src="images/ruby.jpeg" alt="ruby" class="fixed-size-image">
-        <figcaption class="image-description">Ruby</figcaption>
     </div>
+    <div class="instock-description">
+        Discover our handpicked collection of expertly crafted PC builds, designed for unbeatable performance and value. 
+        Whether you're gaming on a budget or aiming for top-tier power, we have the perfect system for every need. From budget-friendly setups to high-end, enthusiast-grade rigs, we deliver the ultimate in performance, quality, and reliability.
+Get more for your money and elevate your gaming or creative experience today!
+
+
+    </div>
+    
     <h3 class="subsec"><a href="custbld.html">Build your dream system!</a></h3>
+    <script src="img_hover.js"></script>
 </body>
 </html>
