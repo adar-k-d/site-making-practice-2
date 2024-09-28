@@ -8,43 +8,56 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
+    <div class="content">
     <div class="topnav">
         <h1>KD's Techverse</h1>
-        <a href="index.html" class="active">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About Us</a>
+        <a href="index.html" class="active">Back to Home</a>
     </div>
-    <form action="booked.html" method="post" class="fillform">
-        <div>
-            <label for="cusname">Name:</label>
-                <input type="text" name="cusname">    
-        </div>
-        <div>
-            <label for="cusno">Contact No:</label>
-             <input type="number">
-        </div>
-        <div>
-            <label for="modelname">Select a Pre-Built Model:</label>
-                <select name="buildchoice">
-                    <option value="azure">Azure</option>
-                    <option value="sapphire">Sapphire</option>
-                    <option value="ruby">Ruby</option>
-                </select>
-        </div>
-        <div>
-
-            <label for="cusaddr">Shipping Address:</label>
-                <textarea name="cusaddr" cols="20" rows="5"></textarea>            
-        </div>
-        <div>
-            <label for="payment">UPI ID:</label>
-                <input type="text">
-        </div>
-        
-        
+    <div class="buydiv">
+        <form action="POST">
+        <table class="buyform">
+            <tr>
+                <td>Your Name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email ID:</td>
+                <td><input type="email" name="" id=""></td>
+            </tr>
+            <tr>
+                <td>Contact No:</td>
+                <td><input type="number" name="" id="" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td>PC Build Model:</td> 
+                <td><select name="" id="">
+                        <option value="azure">Azure</option>
+                        <option value="sapphire">Sapphire</option>
+                        <option value="ruby">Ruby</option>
+                    </select>
+            </td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Place Order" class="btn"></td>
+                <td><input type="reset" value="Reset" class="btn"></td>
+            </tr>
+        </table>
     </form>
+    </div>
+</div>
+    <footer id="about">
+        <div class="footer-container">
+            <h3>About Us</h3>
+            <p>We are a passionate team of friends committed to delivering the best products and services. Our mission is to push the message of "right-to-repair", by increasing awareness of the advantages of a modular computer. You do not "just" own a PC, with our help, you can gain full control and understanding over your machine.</p>
+        </div>
+    </footer>
 
 </body>
 </html>

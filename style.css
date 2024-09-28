@@ -1,5 +1,6 @@
-html {
+html,body {
     scroll-behavior: smooth;
+    height: 100%;
 }
 body {
     background-image: url("images/background_image.png");
@@ -9,7 +10,16 @@ body {
     background-size: cover;
     margin-top: -15px;
     backdrop-filter: blur(8px);
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes the footer to the bottom */
+    min-height: 100vh;
   
+}
+.content {
+    flex-grow: 1;
 }
 * {
     font-family: "Geologica", sans-serif;
@@ -30,6 +40,12 @@ div.image-container img {
     height: auto;
     padding: 10px;
     border-radius: 20px;
+}
+div.image-container img:hover {
+    size: 150%;
+}
+img:hover{
+        transition: scale;
 }
 div.desc {
     padding: 15px;
@@ -120,7 +136,8 @@ div.desc {
     text-decoration: none;
 }
 */
-div .subsec{
+.btn{
+    text-decoration: none;
     font-size: 50px;
     padding: 30px;
     margin-top: 100px;
@@ -129,8 +146,9 @@ div .subsec{
     background: rgb(29, 22, 5);
     transition: background 0.3s ease, transform 0.3s ease;
     transition: color 0.3s ease, transform 0.3s ease;
+    border-radius: 40px;
 }
-div .subsec:hover {
+.btn:hover {
     background: #ffd900;
     color: black;
 
@@ -193,15 +211,15 @@ form div {
     margin: 5px 0;
 }
 
-#contacts a {
+#contacts i {
     text-decoration: none;
     color: #fcfcfc;
     transition: color 0.3s ease, transform 0.3s ease;
     transition: font-size 0.3s ease, transform 0.3s ease;
 }
 
-#contacts a:hover {
-    text-decoration: underline;
+#contacts i:hover {
+    /*text-decoration: underline;*/
     color: #ffd900;
     font-size: 125%;
     
@@ -214,6 +232,69 @@ form div {
     width: 100%;
     color: white;
     text-align: center;
-    padding-bottom: 50px;
     
 }
+.pctitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    padding: 50px;
+}
+.pcpic {
+    width: 500px;
+    height: 500px;
+    float: left;    
+    margin: 30px;
+    border-radius: 20px;
+}
+.pcdesc {
+    font-size: 30px;
+    background-color: #00000073;
+    padding: 30px;
+   /* text-align: center;*/
+
+}
+.speclist {
+    font-size: 30px;
+    text-align: left;
+}
+.speclist tr td{
+    padding: 10px;
+}
+
+select,input,textarea {
+    color: black; /* Make the selected text black */
+    background-color: #f0f0f0; /* Optional: light background */
+    border: 1px solid #555; /* Styling the border */
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 30px;
+  }
+  
+  option {
+    color: black; /* Ensure options text is black */
+  }
+  
+  /* Optional: Focus state for the select box */
+  select:focus {
+    outline: none;
+    border-color: #777;
+  }
+  .buyform {
+    margin: 10px auto; /* This centers the table horizontally */
+    border-collapse: collapse;
+    width: 80%; 
+
+
+  }
+  input.btn{
+    color: white;
+
+  }
+  .buydiv {
+    background-color: #00000073;
+    padding: 20px;
+    margin: 40px;
+    border-radius: 30px;
+  }
