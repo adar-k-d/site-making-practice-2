@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
 </head>
 <body>
     <div class="content">
@@ -16,46 +17,47 @@
         <h1>KD's Techverse</h1>
         <a href="index.html" class="active">Back to Home</a>
     </div>
-    <div class="title">Build Your Own PC</div>
     <div class="buydiv">
-        <form action="success.html" method="post" id="build-form">
+        <form id="build-form" action="success.html">
         <table class="buyform">
             <tr>
                 <td>Your Name:</td>
-                <td><input type="text" id="name" name="name"></td>
+                <td><input type="text" name="name" id="name" placeholder="Ex : John Doe"></td>
             </tr>
             <tr>
                 <td>Email ID:</td>
-                <td><input type="email" name="email" id="email"></td>
+                <td><input type="email" name="email" id="email" placeholder="Ex : johndoe@gmail.com"></td>
             </tr>
             <tr>
                 <td>Contact No:</td>
-                <td><input type="number" name="email" id="email" maxlength="10"></td>
+                <td><input type="number" name="phone" id="phone" maxlength="10" placeholder="Ex : 1234567890"></td>
             </tr>
             <tr>
-                <td>PC Partpicker List:</td>
-                <td><input type="url" name="pclink" id="pclink"></td>
-            </tr>
-            <tr>
-                <td>OR</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Enter your desired parts:</td>
-                <td><textarea name="partlist" id="partlist" cols="30" rows="10"></textarea></td>
+                <tr>
+                    <td>PC Partpicker List:</td>
+                    <td><input type="url" name="pclink" id="pclink"></td>
+                </tr>
+                <tr>
+                    <td>OR</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Enter your desired parts:</td>
+                    <td><textarea name="partlist" id="partlist" cols="30" rows="10"></textarea></td>
+                </tr>
+            </td>
             </tr>
             <tr>
                 <td>Address:</td>
                 <td><textarea name="addr" id="addr" cols="30" rows="10"></textarea></td>
             </tr>
             <tr>
-                <td><input type="submit" value="Place Order" class="btn"></td>
+                <td><input id="submit"  type="submit" value="Place Order" class="btn"></td>
                 <td><input type="reset" value="Reset" class="btn"></td>
             </tr>
         </table>
     </form>
     </div>
-    <script src="validator.js"></script>
 </div>
     <footer id="about">
         <div class="footer-container">
@@ -63,6 +65,6 @@
             <p>We are a passionate team of friends committed to delivering the best products and services. Our mission is to push the message of "right-to-repair", by increasing awareness of the advantages of a modular computer. You do not "just" own a PC, with our help, you can gain full control and understanding over your machine.</p>
         </div>
     </footer>
-
+    <script src="validator_2.js"></script>
 </body>
 </html>
